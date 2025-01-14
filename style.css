@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background: #f9f9f9
+    url(https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  margin: 0;
+}
+
+.flashcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.flashcard-content {
+  text-align: center;
+  padding: 20px 2rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  box-shadow: 10px 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.flashcard-title h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.question {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
