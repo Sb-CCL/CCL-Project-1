@@ -64,7 +64,7 @@ prevbutton.addEventListener("click", function () {
   console.log("Previous Button Clicked");
 
   // If statement that iterates through the array
-  if (questionArr < flashcards.length - 1) {
+  if (questionArr < flashcards.length + 1) {
     // Incremates up
     questionArr--;
 
