@@ -10,6 +10,8 @@ const flashcards = [
   },
 ];
 
+let arrQuestions = 0;
+
 // For loop that loops through the flashcards objects
 for (let i = 0; i < flashcards.length; i++) {
   // Question & Answers
@@ -20,10 +22,28 @@ for (let i = 0; i < flashcards.length; i++) {
   //   console.log(`Answer: ${flashcards[i].answer}`);
 }
 
+// Event Listener - Answer Button
+const answerButton = document.getElementById("answerButton");
+let answerQuestion = 0;
+answerButton.addEventListener("click", function () {
+  console.log(`Answer: ${flashcards[answerQuestion].answer}`);
+  nextQuestion++;
+});
+
 // Event Listener - Next Question Button
 const nextQuestionButton = document.getElementById("nextQuestionButton");
+let nextQuestion = 0;
 nextQuestionButton.addEventListener("click", function () {
-  console.log(`Question: ${flashcards[i].question}`);
+  console.log(`Question: ${flashcards[nextQuestion].question}`);
+  nextQuestion++;
+});
+
+// Event Listener - Previous Question Button
+const prevQuestionButton = document.getElementById("prevQuestionButton");
+let prevQuestion = 0;
+prevQuestionButton.addEventListener("click", function () {
+  console.log(`Question: ${flashcards[prevQuestion].question}`);
+  prevQuestion--;
 });
 
 const question = document.getElementById("question");
