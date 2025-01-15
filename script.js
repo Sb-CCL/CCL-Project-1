@@ -61,7 +61,7 @@ nextbutton.addEventListener("click", function () {
 
 prevbutton.addEventListener("click", function () {
   // Checks if the button is clicked
-  console.log("Next Button Clicked");
+  console.log("Previous Button Clicked");
 
   // If statement that iterates through the array
   if (questionArr < flashcards.length - 1) {
