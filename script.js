@@ -60,5 +60,19 @@ nextbutton.addEventListener("click", function () {
 });
 
 prevbutton.addEventListener("click", function () {
-  console.log("Prev Button Clicked");
+  // Checks if the button is clicked
+  console.log("Next Button Clicked");
+
+  // If statement that iterates through the array
+  if (questionArr < flashcards.length - 1) {
+    // Incremates up
+    questionArr--;
+
+    // Adds the question to the question and answer div
+    question.innerText = flashcards[questionArr].question;
+    answer.innerText = flashcards[questionArr].answer;
+
+    // hides the answer
+    answer.classList.add("hidden");
+  }
 });
