@@ -6,13 +6,25 @@ let prevbutton = document.getElementById("prevbutton");
 
 const flashcards = [
   {
-    question: "What are Parameters and Arguments?",
-    answer:
-      "Parameters are variables listed in the function definition. Arguments are actual values passed to the function when it is called.",
+    question: "What are Parameters?",
+    answer: "Parameters are variables listed in the function definition.",
   },
   {
     question: "What is JavaScript?",
     answer: "JavaScript is a programming language used for web development.",
+  },
+  {
+    question: "What is a Function?",
+    answer: "A function is a block of reusable code.",
+  },
+  {
+    question: "What is Git?",
+    answer: "A tool that allows you to store, track, and share code.",
+  },
+  {
+    question: "What are Arguments?",
+    answer:
+      "Arguments are actual values passed to the function when it is called.",
   },
 ];
 
