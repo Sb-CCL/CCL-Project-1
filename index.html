@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flashcards</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="flashcards">
@@ -12,12 +16,20 @@
         <h2>Flashcard</h2>
       </header>
       <!-- Card -->
+      <div class="card-index"><p id="card-index"></p></div>
+
       <div class="flashcard-content">
         <h1 id="question"></h1>
         <p id="answer"></p>
-        <button id="button" class="btn">Toggle Answer</button>
-        <button id="prevbutton" class="btn">Previous</button>
-        <button id="nextbutton" class="btn">Next</button>
+        <div class="buttons">
+          <button id="prevbutton" class="btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button id="button" class="btn"><i class="fas fa-check"></i></button>
+          <button id="nextbutton" class="btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
     </section>
     <!-- Script Tag -->

@@ -21,7 +21,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 1rem;
 }
 
 .flashcard-content {
@@ -40,6 +39,10 @@ body {
   font-size: 1.8rem;
 }
 
+.card-index {
+  font-weight: bold;
+}
+
 .question {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -51,6 +54,15 @@ body {
   font-size: 1rem;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
 .btn {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
@@ -59,15 +71,16 @@ body {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-/* Instructor */
-
 .hidden {
   display: none;
+}
+
+.card-index {
+  font-size: 1.2rem;
 }

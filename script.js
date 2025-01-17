@@ -3,6 +3,7 @@ let question = document.getElementById("question");
 let answer = document.getElementById("answer");
 let nextbutton = document.getElementById("nextbutton");
 let prevbutton = document.getElementById("prevbutton");
+let cardIndex = document.getElementById("card-index");
 
 const flashcards = [
   {
@@ -31,9 +32,13 @@ const flashcards = [
 let questionArr = 0;
 
 // Show the answers on refresh
-question.innerText = flashcards[questionArr].question;
-answer.innerText = flashcards[questionArr].answer;
-answer.classList.add("hidden");
+
+function updateFlashcard() {
+  question.innerText = flashcards[questionArr].question;
+  answer.innerText = flashcards[questionArr].answer;
+  answer.classList.add("hidden");
+  cardIndex.innerText = `${questionArr + 1}/${flashcards.length}`;
+}
 
 // Button that toggles display of answer
 button.addEventListener("click", function () {
@@ -49,6 +54,7 @@ nextbutton.addEventListener("click", function () {
   if (questionArr < flashcards.length - 1) {
     // Incremates up
     questionArr++;
+    updateFlashcard();
 
     // Adds the question to the question and answer div
     question.innerText = flashcards[questionArr].question;
@@ -67,6 +73,7 @@ prevbutton.addEventListener("click", function () {
   if (questionArr < flashcards.length + 1) {
     // Incremates up
     questionArr--;
+    updateFlashcard();
 
     // Adds the question to the question and answer div
     question.innerText = flashcards[questionArr].question;
@@ -76,3 +83,5 @@ prevbutton.addEventListener("click", function () {
     answer.classList.add("hidden");
   }
 });
+
+updateFlashcard();
