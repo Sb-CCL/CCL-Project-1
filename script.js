@@ -4,7 +4,7 @@ let answer = document.getElementById("answer");
 let nextbutton = document.getElementById("nextbutton");
 let prevbutton = document.getElementById("prevbutton");
 let cardIndex = document.getElementById("card-index");
-
+//absara
 const flashcards = [
   {
     question: "What are Parameters?",
